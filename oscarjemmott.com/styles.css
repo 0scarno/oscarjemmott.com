@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+    cursor: crosshair;
+    
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+  font-family: monaco, monospace;
+    background-color: #FAFAFA;
+    max-width: 666px;
+}
+
+.page{
+    margin-left: 10px;
+}
+
+.logo{
+    height: 1em;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+.pics{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pics>img{
+    display: flex;
+    max-height: 80px;
+}
+
+.bandcamp{
+    display: flex;
+    height: auto;
+}
+
+details{
+    margin-bottom: 1em;
+    
+}
+
+details>summary{
+    list-style: none;
+    display: block;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.clickable:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+address,a{
+    text-decoration: none;
+    font-style:normal;
+    display: inline;
+    color: black;
+}
+
+.bandcamp{
+    border: 0; 
+    height: 472px;
+    width: 400px;
+}
+
+footer {
+    color: #CCC;
+    font-size: 11px;
+    font-weight: lighter;
+    margin-top: 2em;
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px) {
+    h1, details,.pics,p,span,.links, footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .page{
+        margin-left: 0px;
+    }
+    
+    a.clickable{
+        padding: 0px 6px;
+    }
+    
+    ul{
+        padding: 0;
+    }
+    li{
+        text-align: center;
+    }
+    .bandcamp{
+        width: 300px;
+    }
+}
