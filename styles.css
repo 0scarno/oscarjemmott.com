@@ -85,6 +85,23 @@ address,a{
     width: 400px;
 }
 
+.flex-container>a{
+    width: 250px;
+}
+
+.flex-container>a>img{
+    width: 240px;
+}
+
+.flex-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 footer {
     color: #CCC;
     font-size: 11px;
